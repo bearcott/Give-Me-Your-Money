@@ -1,0 +1,8 @@
+body {
+  font: 1.2em/1 Helvetica;
+  text-align: center;
+}
+
+.howMuch {
+  display: none;
+}
