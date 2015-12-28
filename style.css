@@ -1,8 +1,111 @@
 body {
   font: 1.2em/1 Helvetica;
   text-align: center;
+  background: #DE8F4C;
+}
+
+h1 {
+  font-weight: 100;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  color: #F7AB6B;
+}
+button.ok {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  box-sizing: content-box;
+  top: 60%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -170px;
+  padding: 0;
+  border-radius: 100%;
+  border: none;
+  border-bottom: 20px solid rgba(0,0,0,0.1);
+  box-shadow: 0 20px rgba(0,0,0,0.1);
+  color: #FFF;
+  background: #E6832E;
+  font-size: 3em;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+}
+button.ok:focus {
+  outline: none;
+}
+button.ok:hover, button.ok.active {
+  margin-top: -150px;
+  border-bottom-width: 0;
+  cursor: pointer;
+  background: #F58221;
+  box-shadow: 0 0 transparent;
 }
 
 .howMuch {
-  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+  margin-top: -130px;
+  margin-left: -130px;
+  border-radius: 100%;
+  background: #FFD1AA;
+  line-height: 300px;
+  font-size: 100px;
+  text-align: center;
+  overflow: hidden;
+  transition: 700ms cubic-bezier(1, -1.5, 0, 1.5);
+}
+.howMuch.out {
+  width: 0;
+  height: 0;
+  margin-top: 0;
+  margin-left: 0;
+}
+.howMuch * {
+  display: inline-block;
+}
+.howMuch label {
+  position: absolute;
+  line-height: 235px;
+  width: 50px;
+  padding-left: 20px;
+  font-size: 50px;
+}
+.howMuch input {
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  padding: 0 40px;
+  padding-left: 60px;
+  font-size: 50px;
+  border: none;
+  background: #FFD1AA;
+}
+.howMuch input:focus {
+  outline: none;
+}
+.howmuch button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #F58221;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 5px rgba(0,0,0,0.1);
+  border-bottom: 4px solid rgba(0,0,0,0.1);
+  transition: all 200ms ease-in-out;
+}
+.howmuch button:hover {
+  box-shadow: 0 0 transparent;
+  border-bottom-width: 0;
+  cursor: pointer;
 }
