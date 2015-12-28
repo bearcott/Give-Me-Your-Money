@@ -109,3 +109,8 @@ button.ok:hover, button.ok.active {
   border-bottom-width: 0;
   cursor: pointer;
 }
+@media only screen and (max-device-width: 480px) {
+  h1 {
+    top: 5%;
+  }
+}
